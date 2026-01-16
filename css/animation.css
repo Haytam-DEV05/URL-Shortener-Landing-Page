@@ -1,0 +1,47 @@
+.fade-in {
+    animation: fadeIn 1.2s ease-in-out forwards;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.from-top {
+    animation: fromTop 1.2s ease-in-out forwards;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.from-right {
+    animation: fromRight 1.2s ease-in-out forwards;
+}
+
+
+@keyframes fromRight {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(200px);
+    }
+}
