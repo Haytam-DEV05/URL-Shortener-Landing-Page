@@ -97,6 +97,84 @@ section {
     font-weight: 700;
 }
 
+.menu-bar {
+    display: none;
+}
+
+.menu-bar i {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+nav .mobile-nav {
+    background-color: var(--Purple-950);
+    position: absolute;
+    top: 80px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+nav .mobile-nav.show ul li a {
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+}
+
+nav .mobile-nav.show .buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+@media (max-width:680px) {
+
+    #header nav .right-nav,
+    #header nav .left-nav ul {
+        display: none;
+    }
+
+    .menu-bar {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        display: block;
+    }
+
+    .menu-bar i.show {
+        display: block;
+        position: absolute;
+        width: 100%;
+        inset: 0;
+        margin: auto;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    #header nav {
+        position: relative;
+    }
+
+    nav .mobile-nav.show {
+        display: block;
+    }
+
+}
+
+@media (max-width:500px) {
+    nav .mobile-nav {
+        width: 90%;
+    }
+}
+
 #header #home {
     min-height: calc(90vh - 80px);
     display: flex;

@@ -12,6 +12,14 @@
     <!-- LINK : CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animation.css" />
+    <!-- LINK | FONTAWESSOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
   </head>
   <body>
@@ -21,17 +29,38 @@
           <div class="logo">
             <img src="images/logo.svg" alt="logo" aria-label="logo-image" />
           </div>
+          <!-- UL LINK FOR BIG DEVICES -->
           <ul>
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Resources</a></li>
           </ul>
+          <!-- UL LINK FOR BIG DEVICES -->
+          <!-- MOBILE MENU -->
         </div>
         <div class="right-nav">
           <button class="btn">Login</button>
           <button class="btn btn-primary">Sign Up</button>
         </div>
+        <!-- MOBILE MENU -->
+
+        <div class="mobile-nav fade-in">
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+          <div class="buttons">
+            <button class="btn">Login</button>
+            <button class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+        <div class="menu-bar">
+          <i class="rotate show fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
       </nav>
+      <!-- START HOME -->
       <div class="home" id="home">
         <div class="container">
           <div class="col-1 from-top">
@@ -57,6 +86,7 @@
           <button class="btn btn-primary">Shorten It!</button>
         </form>
       </div>
+      <!-- END HOME -->
     </header>
 
     <main>
