@@ -20,3 +20,23 @@ menuBare.addEventListener('click', () => {
   })
   mobileNav.classList.toggle('show')
 })
+
+// MAKE THE ANIMATION USING INTERSECTION OBSERVER =>
+
+const boxes = document.querySelectorAll(
+  '.about .container .container-boxes .box'
+)
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entrie => {
+    if (entrie.isIntersecting) {
+      entrie.target.classList.add('box-animation')
+      observer.unobserve(entrie.target)
+    }
+  })
+})
+
+boxes.forEach((box, index) => {
+  box.style.animationDelay = index * 0.1 + 's'
+  observer.observe(box)
+})

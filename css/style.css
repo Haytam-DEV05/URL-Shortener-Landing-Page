@@ -344,15 +344,29 @@ nav .mobile-nav.show .buttons {
     position: relative;
     border-radius: 5px;
     position: relative;
+    --soft: 0px;
+    opacity: 0;
+    transform: translateY(calc(200px + var(--soft)));
+}
+
+#about .container .container-boxes .box.box-animation {
+    animation: box-animation 1.2s ease-in-out forwards;
+}
+
+@keyframes box-animation {
+    to {
+        opacity: 1;
+        transform: translateY(var(--soft));
+    }
 }
 
 #about .container .container-boxes .box:nth-child(2) {
-    transform: translateY(20px);
+    --soft: 20px;
 }
 
 
 #about .container .container-boxes .box:nth-child(3) {
-    transform: translateY(40px);
+    --soft: 40px;
 }
 
 #about .container .container-boxes .box img {
@@ -439,7 +453,8 @@ footer .container {
     footer ul {
         margin-bottom: 20px;
     }
-    .social-icons{
+
+    .social-icons {
         max-width: fit-content;
         margin-left: auto;
         margin-right: auto;
